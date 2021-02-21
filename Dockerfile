@@ -76,7 +76,7 @@ ENV PYSPARK_PYTHON=python
 ENV PYSPARK_DRIVER_PYTHON=python
 
 RUN pip install --no-cache-dir --upgrade pip setuptools wheel && \
-    pip install --no-cache-dir notebook==5.* pyspark==${SPARK_VER} spylon-kernel==0.4.* && \
+    pip install --no-cache-dir pyspark==${SPARK_VER} spylon-kernel==0.4.* jupyterlab==2.1.5&& \
     python -m spylon_kernel install --sys-prefix
 
 # Setuo pyenv 
