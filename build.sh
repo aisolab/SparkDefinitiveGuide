@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-PYTHON_VER=${1}
-SPARK_VER=${2}
+PYTHON_VER=3.7.9
+SPARK_VER=2.4.7
 
 # Build the image with different arguments
 docker build \
